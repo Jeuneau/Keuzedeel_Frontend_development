@@ -1,4 +1,4 @@
-// Save the rating to localStorage when a radio button is selected
+// Save the rating when a radio button is selected
 document.querySelectorAll('.star-rating').forEach(function(ratingDiv) {
     var ratingId = ratingDiv.id;
     ratingDiv.querySelectorAll('input').forEach(function(radio) {
@@ -28,5 +28,9 @@ document.querySelectorAll('.clear-rating').forEach(function(button) {
         if (checkedInput) {
             checkedInput.checked = false;
         }
+        // Force a refresh of the star ratings
+        document.querySelectorAll('#' + ratingId + ' input').forEach(function(input) {
+            input.dispatchEvent(new Event('change'));
+        });
     });
 });
