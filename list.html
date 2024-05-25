@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+ 
+          
+  <C:\Users\jeune\Documents\Softwaredeveloper(creative)\Schooljaar_2023-2024\Keuzedelen\Frontend development\bootstrap-5.3.3-dist\css>
+  <link rel="stylesheet" type="text/css"href="css/bootstrap.min.css">
+          
+  <C:\Users\jeune\Documents\Softwaredeveloper(creative)\Schooljaar_2023-2024\Keuzedelen\Frontend development\bootstrap-5.3.3-dist\js>
+  <script src="js/bootstrap.min.js"></script>
+  <title>List</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="search.js"></script>
+  <script src="list.js"></script>
+</head>
+ 
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+              <img src="img/Logo.png" alt="My Golden List" style="width:100px; height: 60px;" class="rounded-pill"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+          <!-- Links -->
+            <ul class="navbar-nav">
+            <li class="nav-item">
+             <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a.active class="nav-link" href="list.html">List</a>
+            </li>
+          </ul>
+            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for names..">
+            <button onclick="searchFunction()">Search</button>
+        </div>
+      </nav>
+
+      <div class="list-container" style="display: flex; justify-content: center;">
+        <div>
+            <h1>Watched Anime</h1>
+            <ul id="watchedAnime">
+                <!-- Watched anime will be added here -->
+            </ul>
+            <input type="text" id="watchedInput" placeholder="Add watched anime">
+            <button onclick="addWatchedAnime()">Add to Watched Anime</button>
+        </div>
+        <div>
+            <h1>Watchlist</h1>
+            <ul id="animeWatchlist">
+                <!-- Anime watchlist will be added here -->
+            </ul>
+            <input type="text" id="watchlistInput" placeholder="Add anime to watchlist">
+            <button onclick="addToWatchlist()">Add to Watchlist</button>
+        </div>
+    </div>
+    
+    <style>
+      .list-container div {
+      width: 45%; /* Adjust this value as needed */
+      margin: 10px;
+      }
+
+      li {
+          margin: 10px 0;
+      }
+
+      li button {
+          margin-left: 10px;
+      }
+    </style>
+      
+</body>
+ 
+</html>

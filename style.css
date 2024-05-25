@@ -1,0 +1,31 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.star-rating {
+    direction: ltr;
+    display: inline-block;
+    padding: 0;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: lightgray;
+    font-size: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label {
+    color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+        color: gold;
+    } /* Add a closing curly brace here */
