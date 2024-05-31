@@ -14,7 +14,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
         var ratingId = ratingDiv.id;
         var rating = localStorage.getItem(ratingId);
         if (rating) {
-            ratingDiv.querySelector('input[value="' + rating + '"]').checked = true;
+            var radio = ratingDiv.querySelector('input[value="' + rating + '"]');
+            if (radio) {
+                radio.checked = true;
+            }
         }
     });
 });
@@ -24,13 +27,13 @@ document.querySelectorAll('.clear-rating').forEach(function(button) {
     button.addEventListener('click', function() {
         var ratingId = this.getAttribute('data-rating-id');
         localStorage.removeItem(ratingId);
-        var checkedInput = document.querySelector('#' + ratingId + ' input:checked');
-        if (checkedInput) {
-            checkedInput.checked = false;
+        var ratingDiv = document.getElementById(ratingId);
+        if (ratingDiv) {
+            var checkedRadio = ratingDiv.querySelector('input:checked');
+            if (checkedRadio) {
+                checkedRadio.checked = false;
+            }
         }
-        // Force a refresh of the star ratings
-        document.querySelectorAll('#' + ratingId + ' input').forEach(function(input) {
-            input.dispatchEvent(new Event('change'));
-        });
     });
 });
+
