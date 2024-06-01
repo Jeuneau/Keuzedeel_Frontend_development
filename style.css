@@ -1,16 +1,5 @@
-/* Reset default styles */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: gold;
-}
-
-.bg-gold {
-    background-color: gold;
-}
-
 .star-rating {
-    direction: ltr;
+    direction: rtl;
     display: inline-block;
     padding: 0;
 }
@@ -24,6 +13,11 @@ body {
     font-size: 30px;
     padding: 0 5px;
     cursor: pointer;
+    display: inline-block;
+}
+
+.star-rating label span {
+  display: block;
 }
 
 .star-rating input:checked ~ label {
@@ -32,6 +26,25 @@ body {
 
 .star-rating label:hover,
 .star-rating label:hover ~ label {
-        color: gold;
-    } /* Add a closing curly brace here */
+    color: gold;
+}
+
+.list-container div {
+    width: 45%; /* Adjust this value as needed */
+    margin: 10px;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    li button {
+        margin-left: 10px;
+    }
+
+.container {
+    background-color: blueviolet
+}    
+
+    
 
