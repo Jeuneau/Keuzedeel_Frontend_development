@@ -1,150 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
- 
-<head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta charset="utf-8">
+
+<html lang="en"> 
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    
+    <C:\Users\jeune\Documents\Softwaredeveloper(creative)\Schooljaar_2023-2024\Keuzedelen\Frontend development\bootstrap-5.3.3-dist\css>
+    <link rel="stylesheet"type="text/css"href="css/bootstrap.min.css">
+            
+    <C:\Users\jeune\Documents\Softwaredeveloper(creative)\Schooljaar_2023-2024\Keuzedelen\Frontend development\bootstrap-5.3.3-dist\js>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Reviews</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
   
-  <C:\Users\jeune\Documents\Softwaredeveloper(creative)\Schooljaar_2023-2024\Keuzedelen\Frontend development\bootstrap-5.3.3-dist\css>
-  <link rel="stylesheet"
-        type="text/css"
-        href="css/bootstrap.min.css">
-          
-  <C:\Users\jeune\Documents\Softwaredeveloper(creative)\Schooljaar_2023-2024\Keuzedelen\Frontend development\bootstrap-5.3.3-dist\js>
-  <script src="js/bootstrap.min.js"></script>
-  <title>Reviews</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
- 
-<body>
+  <body>
+      <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="home.html">
+                <img src="img/Logo.png" alt="My Golden List" style="width:100px; height: 60px;" class="rounded-pill"> 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+            <!-- Links -->
+              <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a.active class="nav-link" href="reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="list.html">List</a>
+              </li>
+            </ul>
+              <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for names..">
+              <button onclick="searchFunction()">Search</button>
+          </div>     
+      </nav>
 
-    <nav class="navbar navbar-expand-sm bg-primary navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="home.html">
-              <img src="img/Logo.png" alt="My Golden List" style="width:100px; height: 60px;" class="rounded-pill"> 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-          <!-- Links -->
-            <ul class="navbar-nav">
-            <li class="nav-item">
-             <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a.active class="nav-link" href="reviews.html">Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="list.html">List</a>
-            </li>
-          </ul>
-            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for names..">
-            <button onclick="searchFunction()">Search</button>
-        </div>     
-    </nav>
-
-    <div class="container">
-        <br></br>
-        <h1>Reviews</h1>
-        <br></br>  
-        <h2>#1 One Piece</h2>
-        <img src="img/One Piece.jpg" alt="placeholder image" class="img-fluid">    
-        <br></br>
-        <div id="rating1" class="star-rating">
-          <input type="radio" id="5-stars" name="rating1" value="5" />
-          <label for="5-stars" class="star">&#9733; <span>5</span></label>
-          <input type="radio" id="4-stars" name="rating1" value="4" />
-          <label for="4-stars" class="star">&#9733; <span>4</span></label>
-          <input type="radio" id="3-stars" name="rating1" value="3" />
-          <label for="3-stars" class="star">&#9733; <span>3</span></label>
-          <input type="radio" id="2-stars" name="rating1" value="2" />
-          <label for="2-stars" class="star">&#9733; <span>2</span></label>
-          <input type="radio" id="1-star" name="rating1" value="1" />
-          <label for="1-star" class="star">&#9733; <span>1</span></label>
-      </div>
-      <button class="clear-rating" data-rating-id="rating1">Clear Rating</button>
-        <br></br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </div>
-
-    <div class="container">
-        <h2>#2 Hibike! Euphonium 3</h2><img src="img/Hibike.jpg" alt="placeholder image 2" class="img-fluid">
-        <br></br>
-        <div id="rating2" class="star-rating">
-          <input type="radio" id="rating2-5-stars" name="rating2" value="5" />
-          <label for="rating2-5-stars" class="star">&#9733; <span>5</span></label>
-          <input type="radio" id="rating2-4-stars" name="rating2" value="4" />
-          <label for="rating2-4-stars" class="star">&#9733; <span>4</span></label>
-          <input type="radio" id="rating2-3-stars" name="rating2" value="3" />
-          <label for="rating2-3-stars" class="star">&#9733; <span>3</span></label>
-          <input type="radio" id="rating2-2-stars" name="rating2" value="2" />
-          <label for="rating2-2-stars" class="star">&#9733; <span>2</span></label>
-          <input type="radio" id="rating2-1-star" name="rating2" value="1" />
-          <label for="rating2-1-star" class="star">&#9733; <span>1</span></label>
+      <div class="container">
+          <br></br>
+          <h1>Reviews</h1>
+          <br></br>  
+          <h2>#1 One Piece</h2>
+          <img src="img/One Piece.jpg" alt="placeholder image" class="img-fluid">    
+          <br></br>
+          <div id="rating1" class="star-rating">
+            <input type="radio" id="5-stars" name="rating1" value="5" />
+            <label for="5-stars" class="star">&#9733; <span>5</span></label>
+            <input type="radio" id="4-stars" name="rating1" value="4" />
+            <label for="4-stars" class="star">&#9733; <span>4</span></label>
+            <input type="radio" id="3-stars" name="rating1" value="3" />
+            <label for="3-stars" class="star">&#9733; <span>3</span></label>
+            <input type="radio" id="2-stars" name="rating1" value="2" />
+            <label for="2-stars" class="star">&#9733; <span>2</span></label>
+            <input type="radio" id="1-star" name="rating1" value="1" />
+            <label for="1-star" class="star">&#9733; <span>1</span></label>
         </div>
-        <button class="clear-rating" data-rating-id="rating2">Clear Rating</button>
-        <br></br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </div>
-
-    <div class="container">
-        <h2>#3 Haikyuu!! Movie: Gomisuteba no Kessen</h2><img src="img/Haikyuu.jpg" alt="placeholder image 2" class="img-fluid">
-        <br></br>
-        <div id="rating3" class="star-rating">
-          <input type="radio" id="rating3-5-stars" name="rating3" value="5" />
-          <label for="rating3-5-stars" class="star">&#9733; <span>5</span></label>
-          <input type="radio" id="rating3-4-stars" name="rating3" value="4" />
-          <label for="rating3-4-stars" class="star">&#9733; <span>4</span></label>
-          <input type="radio" id="rating3-3-stars" name="rating3" value="3" />
-          <label for="rating3-3-stars" class="star">&#9733; <span>3</span></label>
-          <input type="radio" id="rating3-2-stars" name="rating3" value="2" />
-          <label for="rating3-2-stars" class="star">&#9733; <span>2</span></label>
-          <input type="radio" id="rating3-1-star" name="rating3" value="1" />
-          <label for="rating3-1-star" class="star">&#9733; <span>1</span></label>
+        <button class="clear-rating" data-rating-id="rating1">Clear Rating</button>
+          <br></br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
-      <button class="clear-rating" data-rating-id="rating3">Clear Rating</button>
-        <br></br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </div>
-  <script src="rating.js"></script>
-  <script src="search.js"></script>
-</body>
+
+      <div class="container">
+          <h2>#2 Hibike! Euphonium 3</h2><img src="img/Hibike.jpg" alt="placeholder image 2" class="img-fluid">
+          <br></br>
+          <div id="rating2" class="star-rating">
+            <input type="radio" id="rating2-5-stars" name="rating2" value="5" />
+            <label for="rating2-5-stars" class="star">&#9733; <span>5</span></label>
+            <input type="radio" id="rating2-4-stars" name="rating2" value="4" />
+            <label for="rating2-4-stars" class="star">&#9733; <span>4</span></label>
+            <input type="radio" id="rating2-3-stars" name="rating2" value="3" />
+            <label for="rating2-3-stars" class="star">&#9733; <span>3</span></label>
+            <input type="radio" id="rating2-2-stars" name="rating2" value="2" />
+            <label for="rating2-2-stars" class="star">&#9733; <span>2</span></label>
+            <input type="radio" id="rating2-1-star" name="rating2" value="1" />
+            <label for="rating2-1-star" class="star">&#9733; <span>1</span></label>
+          </div>
+          <button class="clear-rating" data-rating-id="rating2">Clear Rating</button>
+          <br></br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+
+      <div class="container">
+          <h2>#3 Haikyuu!! Movie: Gomisuteba no Kessen</h2><img src="img/Haikyuu.jpg" alt="placeholder image 2" class="img-fluid">
+          <br></br>
+          <div id="rating3" class="star-rating">
+            <input type="radio" id="rating3-5-stars" name="rating3" value="5" />
+            <label for="rating3-5-stars" class="star">&#9733; <span>5</span></label>
+            <input type="radio" id="rating3-4-stars" name="rating3" value="4" />
+            <label for="rating3-4-stars" class="star">&#9733; <span>4</span></label>
+            <input type="radio" id="rating3-3-stars" name="rating3" value="3" />
+            <label for="rating3-3-stars" class="star">&#9733; <span>3</span></label>
+            <input type="radio" id="rating3-2-stars" name="rating3" value="2" />
+            <label for="rating3-2-stars" class="star">&#9733; <span>2</span></label>
+            <input type="radio" id="rating3-1-star" name="rating3" value="1" />
+            <label for="rating3-1-star" class="star">&#9733; <span>1</span></label>
+        </div>
+        <button class="clear-rating" data-rating-id="rating3">Clear Rating</button>
+          <br></br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    <script src="rating.js"></script>
+    <script src="search.js"></script>
+  </body>
 
 
 
-<style>
-  .star-rating {
-      direction: rtl;
-      display: inline-block;
-      padding: 0;
-  }
-  
-  .star-rating input {
-      display: none;
-  }
-  
-  .star-rating label {
-      color: lightgray;
-      font-size: 30px;
-      padding: 0 5px;
-      cursor: pointer;
-      display: inline-block;
-  }
+  <style>
+    .star-rating {
+        direction: rtl;
+        display: inline-block;
+        padding: 0;
+    }
+    
+    .star-rating input {
+        display: none;
+    }
+    
+    .star-rating label {
+        color: lightgray;
+        font-size: 30px;
+        padding: 0 5px;
+        cursor: pointer;
+        display: inline-block;
+    }
 
-  .star-rating label span {
-    display: block;
-  }
-  
-  .star-rating input:checked ~ label {
-      color: gold;
-  }
-  
-  .star-rating label:hover,
-  .star-rating label:hover ~ label {
-      color: gold;
-  }
-  </style>
+    .star-rating label span {
+      display: block;
+    }
+    
+    .star-rating input:checked ~ label {
+        color: gold;
+    }
+    
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+        color: gold;
+    }
+    </style>
 </html>

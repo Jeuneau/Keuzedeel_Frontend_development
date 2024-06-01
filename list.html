@@ -9,11 +9,13 @@
           
   <C:\Users\jeune\Documents\Softwaredeveloper(creative)\Schooljaar_2023-2024\Keuzedelen\Frontend development\bootstrap-5.3.3-dist\css>
   <link rel="stylesheet" type="text/css"href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"href="style.css">
           
   <C:\Users\jeune\Documents\Softwaredeveloper(creative)\Schooljaar_2023-2024\Keuzedelen\Frontend development\bootstrap-5.3.3-dist\js>
   <script src="js/bootstrap.min.js"></script>
   <title>List</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
  
 <body>
@@ -52,6 +54,7 @@
             </ul>
             <input type="text" id="watchedInput" placeholder="Add watched anime">
             <button onclick="addWatchedAnime()">Add to Watched Anime</button>
+            <button id="clearWatchedAnime">Clear Watched</button>
         </div>
         <div>
             <h1>Watchlist</h1>
@@ -60,25 +63,27 @@
             </ul>
             <input type="text" id="watchlistInput" placeholder="Add anime to watchlist">
             <button onclick="addToWatchlist()">Add to Watchlist</button>
+            <button id="clearWatchlist">Clear Watchlist</button>
         </div>
     </div>
     
-    <style>
-      .list-container div {
-      width: 45%; /* Adjust this value as needed */
-      margin: 10px;
-      }
-
-      li {
-          margin: 10px 0;
-      }
-
-      li button {
-          margin-left: 10px;
-      }
-    </style>
+   
   <script src="search.js"></script>
   <script src="list.js"></script>  
+  <style>
+    .list-container div {
+    width: 45%; /* Adjust this value as needed */
+    margin: 10px;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    li button {
+        margin-left: 10px;
+    }
+  </style>
 </body>
  
 </html>

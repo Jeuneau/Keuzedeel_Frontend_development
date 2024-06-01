@@ -2,6 +2,11 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: gold;
+}
+
+.bg-gold {
+    background-color: gold;
 }
 
 .star-rating {
@@ -29,3 +34,4 @@ body {
 .star-rating label:hover ~ label {
         color: gold;
     } /* Add a closing curly brace here */
+
